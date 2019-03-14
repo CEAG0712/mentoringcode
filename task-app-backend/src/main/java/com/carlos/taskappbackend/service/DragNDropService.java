@@ -30,9 +30,9 @@ public class DragNDropService {
       dragNDropDTO.getDragNDropDTOS().stream().map(dndObject ->
                 {
                     Task task1 = taskRepository.findByTaskId(dndObject.getTaskId());
-                    task1.setIndex(dndObject.getIndex());
+                    task1.setColIndex(dndObject.getIndex());
 
-                    updateTasks.set(task1.getIndex(),task1);
+                    updateTasks.set(task1.getColIndex(),task1);
                     return task1;
 
                 }).collect(Collectors.toList());
@@ -49,4 +49,14 @@ public class DragNDropService {
 
         return columnRepository.findAll();
     }
+
+    public Column updateColumn (Column column) {
+        for (Task task : column.getTaskList()) {
+            task.setColumn(column);
+        }
+        taskRepository.saveAll(column.getTaskList());
+
+        return columnRepository.save(column);
+    }
+
 }

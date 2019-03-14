@@ -2,6 +2,7 @@ package com.carlos.taskappbackend.resources;
 
 import com.carlos.taskappbackend.domain.Column;
 import com.carlos.taskappbackend.service.ColumnService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +20,8 @@ public class ColumnController {
     }
 
     @GetMapping
-    public Iterable<Column> findAllColumns(){
-        return columnService.findAll();
+    public ResponseEntity findAllColumns(){
+        return ResponseEntity.ok(columnService.findAll());
     }
 }
  //Handle Change

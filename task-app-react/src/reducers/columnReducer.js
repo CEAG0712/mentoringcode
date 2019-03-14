@@ -1,4 +1,4 @@
-import { GET_ALL_COLUMNS } from "../actions/ActionTypes";
+import { GET_ALL_COLUMNS, UPDATE_COLUMNS } from "../actions/ActionTypes";
 
 const initialState = {
   columns: []
@@ -10,6 +10,15 @@ export default function(state = initialState, action) {
       return {
         ...state,
         columns: action.payload
+      };
+    case UPDATE_COLUMNS:
+      return {
+        ...state,
+        columns: state.columns.map(column =>
+          column.colId === action.payload.colId
+            ? (column = action.payload)
+            : column
+        )
       };
     default:
       return state;

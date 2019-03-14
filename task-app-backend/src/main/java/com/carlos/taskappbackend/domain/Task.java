@@ -19,7 +19,8 @@ public class Task {
     @ManyToOne
     @JsonIgnore
     private Column column;
-    private int index;
+    private String status; // todo, inProgress, Done, Test
+    private int colIndex;
 
     public Task(String taskId, String content) {
         this.taskId = taskId;

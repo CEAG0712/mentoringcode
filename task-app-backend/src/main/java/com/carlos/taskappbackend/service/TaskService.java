@@ -14,6 +14,6 @@ public class TaskService {
     }
 
     public Iterable<Task> findAll(){
-        return taskRepository.findAll();
+        return (Iterable<Task>) taskRepository.findAll();
     }
 }

@@ -5,7 +5,7 @@ export class Task extends Component {
   render() {
     const { task, index } = this.props;
     return (
-      <Draggable draggableId={task.id} index={index}>
+      <Draggable draggableId={task.taskId} index={index}>
         {provided => (
           <li
             className="list-group-item d-flex justify-content-between align-items-center"
@@ -14,6 +14,7 @@ export class Task extends Component {
             ref={provided.innerRef}
           >
             {task.content}
+            ...{task.colIndex}
             <span className="badge badge-primary badge-pill">
               {task.taskId}
             </span>

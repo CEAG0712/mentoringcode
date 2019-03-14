@@ -35,7 +35,7 @@ public class InitialData {
                 task.setColumn(column);
                 finalTasks.add(task);
 
-               task.setIndex(finalTasks.indexOf(task));
+               task.setColIndex(finalTasks.indexOf(task));
                 return repository.save(task);
             }).collect(Collectors.toList());
 

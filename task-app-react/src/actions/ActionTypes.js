@@ -1,2 +1,3 @@
 export const GET_ALL_TASKS = "GET_ALL_TASKS";
 export const GET_ALL_COLUMNS = "GET_ALL_COLUMNS";
+export const UPDATE_COLUMNS = "UPDATE_COLUMNS";

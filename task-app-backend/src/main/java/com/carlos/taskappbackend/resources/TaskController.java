@@ -6,6 +6,7 @@ import com.carlos.taskappbackend.domain.Task;
 import com.carlos.taskappbackend.dto.DragNDropDTO;
 import com.carlos.taskappbackend.service.DragNDropService;
 import com.carlos.taskappbackend.service.TaskService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -27,8 +28,12 @@ public class TaskController {
     }
 
     @PutMapping
-    public Iterable<?> dragAndDrop(@RequestBody DragNDropDTO dragNDropDTO ){
+    public ResponseEntity dragAndDrop(@RequestBody Column column ){
 
-        return dragNDropService.updateColumn(dragNDropDTO);
+        return ResponseEntity.ok(dragNDropService.updateColumn(column));
+
     }
+
+
+
 }

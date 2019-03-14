@@ -23,9 +23,12 @@ class Column extends Component {
                 ref={provided.innerRef}
                 {...provided.droppableProps}
               >
-                {column.taskList.map((task, index) => (
-                  <Task key={task.taskId} task={task} index={index} />
-                ))}
+                {column.taskList
+                  //https://www.w3schools.com/jsref/jsref_sort.asp
+                  .sort((task1, task2) => task1.colIndex - task2.colIndex)
+                  .map((task, index) => (
+                    <Task key={task.taskId} task={task} index={index} />
+                  ))}
                 {provided.placeholder}
               </ul>
             )}
