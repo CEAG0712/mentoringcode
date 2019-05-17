@@ -1,0 +1,15 @@
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/repository/BugRepository.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/dtos/StoryResponseDTO.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/repository/StoryRepository.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/service/BacklogItemService.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/dtos/BugResponseDTO.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/data/InitialDataLoad.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/domain/BacklogItem.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/dtos/GetAllBacklogItemsResponseDTO.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/domain/Story.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/dtos/BacklogItemAbstractResponseDTO.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/domain/Bug.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/FullstackfactorypatternApplication.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/dtos/BacklogItemDTO.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/service/BacklogItemFactoryComponent.java
+/Users/uttpal/junk/mentoringcode/fullstackfactorypattern/src/main/java/io/agileintelligence/fullstackfactorypattern/resources/BacklogItemController.java
